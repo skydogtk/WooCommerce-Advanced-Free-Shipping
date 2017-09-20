@@ -103,6 +103,7 @@ class WAFS_Condition {
 		$conditions = array(
 			__( 'Cart', 'woocommerce-advanced-free-shipping' ) => array(
 				'subtotal'                => __( 'Subtotal', 'woocommerce-advanced-free-shipping' ),
+				'subtotal_ex_discount'    => __( 'Subtotal ex. discounts', 'woocommerce-advanced-free-shipping' ),
 				'subtotal_ex_tax'         => __( 'Subtotal ex. taxes', 'woocommerce-advanced-free-shipping' ),
 				'tax'                     => __( 'Tax', 'woocommerce-advanced-free-shipping' ),
 				'quantity'                => __( 'Quantity', 'woocommerce-advanced-free-shipping' ),

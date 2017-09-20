@@ -15,6 +15,7 @@ require_once 'conditions/wpc-date-condition.php';
 require_once 'conditions/wpc-time-condition.php';
 
 require_once 'conditions/wpc-subtotal-condition.php';
+require_once 'conditions/wpc-subtotal-ex-discount-condition.php';
 require_once 'conditions/wpc-subtotal-ex-tax-condition.php';
 require_once 'conditions/wpc-tax-condition.php';
 require_once 'conditions/wpc-quantity-condition.php';
@@ -73,6 +74,7 @@ if ( ! function_exists( 'wpc_get_registered_conditions' ) ) {
 			new WPC_Time_Condition(),
 
 			new WPC_Subtotal_Condition(),
+			new WPC_Subtotal_Ex_Discount_Condition(),
 			new WPC_Subtotal_Ex_Tax_Condition(),
 			new WPC_Tax_Condition(),
 			new WPC_Quantity_Condition(),
