@@ -2,8 +2,9 @@
 Contributors: sormano
 Tags: woocommerce shipping, woocommerce, shipping, woocommerce free shipping, woocommerce free, woocommerce advanced free shipping, wc free shipping, wc shipping, advanced shipping, pro shipping, table rate shipping, country shipping, free shipping
 Requires at least: 4.0
-Tested up to: 4.7.3
-Stable tag: 1.1.1
+Tested up to: 4.8
+Stable tag: 1.1.3
+Requires PHP: 5.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +28,7 @@ There are many default shipping conditions available.
 - Shipping class
 - Category
 - Weight
+- Volume (Width / Length / Height)
 - many, many more...
 
 Not there what you're looking for? The plugin has been made to be easily extensible, meaning you can also add your own custom conditions through code snippets!
@@ -57,7 +59,7 @@ Not there what you're looking for? The plugin has been made to be easily extensi
 There are a few plugins out there that add a message when someone hasn't reached the free shipping threshold yet. These plugin work on the 'Free shipping' option that is provided in WooCommerce by default.
 It is unlikely that these plugins will work out of the box with Advanced Free Shipping due to the complexity of the conditional logic.
 
-In case you do want to show this kind of message, The [Advanced Messages for WooCommerce](https://shopplugins.com/plugins/woocommerce-advanced-messages/ ) plugin allows you to setup a message with the same type of conditions, allowing you to setup the messages according to the same needs as the free shipping options.
+In case you do want to show this kind of message, The [Advanced Messages for WooCommerce](https://aceplugins.com/plugin/woocommerce-advanced-messages/) plugin allows you to setup a message with the same type of conditions, allowing you to setup the messages according to the same needs as the free shipping options.
 
 **Translations, feature requests and ratings are welcome and appreciated!**
 
@@ -98,6 +100,23 @@ In the future this will likely be changed, for now I recommend taking a look at 
 4. WooCommerce Shipping condition available operators
 
 == Changelog ==
+
+= 1.1.3 - 26-09-2017 =
+
+* [Add] - Helpful resources meta box
+* [Tested] - WooCommerce 3.2
+* [Improvement] - Update WP Conditions to 1.0.5
+		- [Improvement] - WC 3.2 changes to prevent notices
+		= 1.0.4 =
+		- [Improvement] - Use WC_Method:get_method_title() instead of get_title() to get method title.
+
+
+= 1.1.2 - 29-06-2017 =
+
+* [Improvement] - Update WP Conditions to 1.0.3
+		- [Fix] - 'User role' condition 'Guest' wasn't working
+		- [Improvement] - Allow conditions outside postbox / multiple times inside. Not limited to .postbox class.
+		- [Add] - Zipcode range support. E.g. 'Zipcode' = 'equal to' = '10000-20000,30000-40000'
 
 = 1.1.1 - 28-04-2017 =
 
